@@ -30,9 +30,9 @@ public class IspListApplication implements CommandLineRunner
         /*repository.save(new IspDAO("101", "Airtel", 650, 4, 100, 987678888, "airtel@gmail.com","Airtel, connecting people!"));
         repository.save(new IspDAO("102","ACT", 600, 3, 90, 987673338, "act@gmail.com", "We ACT upon excellence!"));
         repository.save(new IspDAO("103","Jio Fibernet", 700, 5, 120, 987676666,"jio@gmail.com","Jio Jee bhar ke!"));*/
-        repository.save(new IspDAO( "Airtel", 650, 4, 100, 987678888, "airtel@gmail.com","Airtel, connecting people!"));
+       /* repository.save(new IspDAO( "Airtel", 650, 4, 100, 987678888, "airtel@gmail.com","Airtel, connecting people!"));
         repository.save(new IspDAO("ACT", 600, 3, 90, 987673338, "act@gmail.com", "We ACT upon excellence!"));
-        repository.save(new IspDAO("Jio Fibernet", 700, 5, 120, 987676666,"jio@gmail.com","Jio Jee bhar ke!"));
+        repository.save(new IspDAO("Jio Fibernet", 700, 5, 120, 987676666,"jio@gmail.com","Jio Jee bhar ke!"));*/
     }
 
     @Override

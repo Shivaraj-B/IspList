@@ -23,24 +23,26 @@ public class IspDetailsController
     private IspDetailsRepository ispRepository;
 
     @RequestMapping(method = RequestMethod.GET , value ="/ispdetails")
+    @CrossOrigin(origins = "http://localhost:4200")
     public List<IspDAO> getAllIspDetails()
     {
          return ispRepository.findAll();
     }
 
     @RequestMapping("/ispdetails/{name}")
+    @CrossOrigin(origins = "http://localhost:4200")
     public IspDAO getIspByName(@PathVariable String name)
     {
         return ispRepository.findByName(name);
     }
 
-    @PutMapping("/ispdetails/{name}")
+  /*  @PutMapping("/ispdetails/{name}")
     public void updateRatings(@RequestBody IspDAO isp, @PathVariable String name) {
 
         IspDAO ispDao = ispRepository.findByName(name);
 
-        /*if (!ispDao.isPresent())
-            return ResponseEntity.notFound().build();*/
+        *//*if (!ispDao.isPresent())
+            return ResponseEntity.notFound().build();*//*
 
         float newRating= (isp.getRating()+ ispDao.getRating())/2;
         System.out.println("rating "+newRating);
@@ -48,6 +50,6 @@ public class IspDetailsController
 
         ispRepository.save(isp);
 
-    }
+    }*/
 
 }

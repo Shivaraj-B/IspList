@@ -1,7 +1,6 @@
 package com.snipers.IspList.Repository;
 
 import com.snipers.IspList.model.IspDAO;
-import com.snipers.IspList.model.Snipers;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;

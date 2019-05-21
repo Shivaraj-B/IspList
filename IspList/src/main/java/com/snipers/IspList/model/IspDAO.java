@@ -22,14 +22,14 @@ public class IspDAO
     private int contactNumber;
     private String emailId;
     private String description;
-   // private PlansDAO plans;
+    private String[] planDetails;
 
     public IspDAO()
     {
     }
- public IspDAO(String id, String name, double lowestPrice, float rating, int maxSpeed, int contactNumber, String emailId,String description)
+
+    public IspDAO(String name, double lowestPrice, float rating, int maxSpeed, int contactNumber, String emailId, String description, String[] planDetails)
     {
-        this.id = id;
         this.name = name;
         this.lowestPrice = lowestPrice;
         this.rating = rating;
@@ -37,30 +37,20 @@ public class IspDAO
         this.contactNumber = contactNumber;
         this.emailId = emailId;
         this.description = description;
+        this.planDetails = planDetails;
     }
 
-   /* public IspDAO(int contactNumber, String id, String name, double lowestPrice, float rating, int maxSpeed, String emailId, String description, PlansDAO plans)
+    public IspDAO(String id, String name, double lowestPrice, float rating, int maxSpeed, int contactNumber, String emailId, String description, String[] planDetails)
     {
-        this.contactNumber = contactNumber;
         this.id = id;
         this.name = name;
         this.lowestPrice = lowestPrice;
         this.rating = rating;
         this.maxSpeed = maxSpeed;
-        this.emailId = emailId;
-        this.description = description;
-        this.plans = plans;
-    }*/
-
-    public IspDAO(String name, double lowestPrice, float rating, int maxSpeed, int contactNumber, String emailId,String description)
-    {
-        this.name = name;
-        this.lowestPrice = lowestPrice;
-        this.rating = rating;
-        this.maxSpeed = maxSpeed;
         this.contactNumber = contactNumber;
         this.emailId = emailId;
-        this.description =description;
+        this.description = description;
+        this.planDetails = planDetails;
     }
 
     public String getId()
@@ -73,12 +63,12 @@ public class IspDAO
         this.id = id;
     }
 
-    public String getPlanName()
+    public String getName()
     {
         return name;
     }
 
-    public void setPlanName(String name)
+    public void setName(String name)
     {
         this.name = name;
     }
@@ -143,14 +133,13 @@ public class IspDAO
         this.description = description;
     }
 
-    /*public PlansDAO getPlans()
+    public String[] getPlanDetails()
     {
-        return plans;
+        return planDetails;
     }
 
-    public void setPlans(PlansDAO plans)
+    public void setPlanDetails(String[] planDetails)
     {
-        this.plans = plans;
-    }*/
-
+        this.planDetails = planDetails;
+    }
 }
