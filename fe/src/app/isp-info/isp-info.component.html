@@ -1,0 +1,17 @@
+
+<p-card>
+  <p-header>
+    {{isp.planName}}
+  </p-header>
+  <div>{{isp.description}}</div>
+  
+  <span>Plans are:</span>
+  <div *ngFor= "let plan of isp.planDetails">
+        {{plan}}
+  </div>
+  <p-footer>
+      <div>{{isp.contactNumber}}</div>
+      <div>{{isp.emailId}}</div>
+  </p-footer>
+</p-card>
+
